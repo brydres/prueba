@@ -1,4 +1,3 @@
-import React from 'react';
 import "../App.css"
 
 export default function DotsCard() {
@@ -8,7 +7,7 @@ export default function DotsCard() {
         <div className='card__img'>
             <img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" />
             <div className='card__grideffect'>
-                {Array.from ({ length: 100}, (_, index) => (
+                {Array.from ({ length: 100 }, (_, index) => (
                     <a key={index} className='card__grid-effect-tile' href="#"></a>
                 ))}
 

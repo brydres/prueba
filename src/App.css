@@ -24,7 +24,7 @@ body{
 }
 
 .card__img > img {
-  width: 1rem;
+  width: 10rem;
   position: relative;
   z-index: 1;
   pointer-events: none;
@@ -34,7 +34,7 @@ body{
   position: absolute;
   z-index: 0;
   inset: 0;
-  display: flex;
+  display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
 }
