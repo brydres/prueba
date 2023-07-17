@@ -29,3 +29,36 @@ body{
   z-index: 1;
   pointer-events: none;
 }
+
+.card__grid-effect{
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  display: flex;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.card__grid-effect-tile {
+  position: relative;
+}
+
+.card__grid-effect-tile:before {
+  content:'';
+  color: #a9c9ff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 0.3rem;
+  width: 0.3rem;
+  border-radius: 50%;
+  background: #a9c9ff;
+  transition: 500ms linear all;
+}
+
+.card__grid-effect-tile:hover:before {
+  height: 3rem;
+  width: 3rem;
+  transition: 70ms linear all;
+}
